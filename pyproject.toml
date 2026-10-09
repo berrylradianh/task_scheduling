@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strategy-task-scheduling"
+version = "0.1.0"
+description = "Simulated daily task scheduling with configurable strategies and per-user quotas"
+readme = "Readme.MD"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+task-scheduling = "task_scheduling.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

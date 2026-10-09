@@ -1,0 +1,12 @@
+{
+  "timezone": "Asia/Jakarta",
+  "users": [
+    {"id": "alice", "quota": 3},
+    {"id": "bob", "quota": 5}
+  ],
+  "tasks": [
+    {"id": "alice-sync", "user": "alice", "time": "12:00", "action": "sync", "params": {"target": "/data/x"}},
+    {"id": "bob-backup", "user": "bob", "time": "12:00", "action": "backup", "params": {"target": "/srv/y"}},
+    {"id": "alice-delete", "user": "alice", "time": "12:00", "action": "delete", "params": {"target": "/tmp/z"}}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "timezone": "UTC",
+  "users": [
+    {"id": "alice", "quota": 2},
+    {"id": "bob", "quota": 1}
+  ],
+  "tasks": [
+    {"id": "alice-sync", "user": "alice", "time": "12:00", "action": "sync", "params": {"target": "/manual/alice/data"}},
+    {"id": "bob-backup", "user": "bob", "time": "12:00", "action": "backup", "params": {"target": "/manual/bob/archive"}},
+    {"id": "alice-delete", "user": "alice", "time": "12:00", "action": "delete", "params": {"target": "/manual/alice/temporary"}},
+    {"id": "alice-over-quota", "user": "alice", "time": "12:00", "action": "sync", "params": {"target": "/manual/alice/extra"}}
+  ]
+}
